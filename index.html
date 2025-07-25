@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header class="header main-grid">
+      <div class="header_wrapper flex">
+        <a href="#" class="header__logo"
+          ><img
+            src="assets/logo-dark.svg"
+            width="112px"
+            height="29px"
+            alt=""
+            class="header__logo-img"
+        /></a>
+        <button class="button button--blue">Get Started</button>
+      </div>
+    </header>
+    <section class="hero main-grid grid--gap-500">
+      <div class="hero__content">
+        <h1 class="hero-heading">Maximize skill, minimize budget</h1>
+        <p class="hero__body">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <button class="buton-pink">Get Started</button>
+      </div>
+      <div class="hero__img-wrapper">
+        <picture class="hero__img">
+          <source
+            media="(min-width :48rem)"
+            srcset="assets/image-hero-tablet.webp"
+          />
+          <source
+            media="(min-width :64rem)"
+            srcset="assets/image-hero-desktop.webp"
+          />
+          <img
+            src="assets/image-hero-mobile.webp"
+            alt="Skilled learning page"
+          />
+        </picture>
+      </div>
+    </section>
+    <section class="courses main-grid">
+      <div class="courses__section-wrapper grid grid-two-col grid-gap-400">
+        <div class="courses__title-box">
+          Check out our most popular courses!
+        </div>
+        <div class="grid grid-gap-300 courses__wrapper">
+          <img src="assets/icon-animation.svg" alt="" class="courses__icon" />
+          <h2 class="courses_title">Animation</h2>
+          <p class="courses__body">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="" class="courses_get-started">Get Started</a>
+        </div>
+        <div class="grid grid-gap-300 courses__wrapper">
+          <img src="assets/icon-design.svg" alt="" class="courses__icon" />
+          <h2 class="courses_title">Design</h2>
+          <p class="courses__body">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="" class="courses_get-started">Get Started</a>
+        </div>
+        <div class="grid grid-gap-300 courses__wrapper">
+          <img src="assets/icon-photography.svg" alt="" class="courses__icon" />
+          <h2 class="courses_title">Photography</h2>
+          <p class="courses__body">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="" class="courses_get-started">Get Started</a>
+        </div>
+        <div class="grid grid-gap-300 courses__wrapper">
+          <img src="assets/icon-crypto.svg" alt="" class="courses__icon" />
+          <h2 class="courses_title">Crypto</h2>
+          <p class="courses__body">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="" class="courses_get-started">Get Started</a>
+        </div>
+        <div class="grid grid-gap-300 courses__wrapper">
+          <img src="assets/icon-business.svg" alt="" class="courses__icon" />
+          <h2 class="courses_title">Business</h2>
+          <p class="courses__body">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="" class="courses_get-started">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <footer class="main-grid">
+      <div class="footer_wrapper flex">
+        <a href="#" class="footer__logo"
+          ><img
+            src="assets/logo-light.svg"
+            width="112px"
+            height="29px"
+            alt=""
+            class="footer__logo-img"
+        /></a>
+        <button class="button button--gradient">Get Started</button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+:root {
+  --clr-primary-900: hsl(233, 54%, 16%);
+  --clr-primary--600: hsl(232, 10%, 56%);
+  --clr-accent-500: hsl(234, 25%, 52%);
+  --clr-accent-600: hsl(341, 92%, 62%);
+  --clr-accent-200: hsl(341, 100%, 83%);
+
+  --clr-gradient-1: hsl(322, 87%, 55%), hsl(13, 100%, 64%);
+
+  --clr-gradient-2: hsl(237, 100%, 64%), hsl(322, 87%, 55%);
+
+  --ff-primary: "Plus Jakarta Sans", sans-serif;
+
+  --fs-100: 1.125rem;
+  --fs-200: 1.5rem; /*24px*/
+  --fs-300: 3.5rem;
+
+  --space-100: 0.5em;
+  --space-150: 0.75em;
+  --space-200: 1em;
+  --space-250: 1.25em;
+  --space-300: 1.5em; /*24px*/
+  --space-400: 2em;
+  --space-550: 2.75em;
+  --space-700: 3.375em;
+  --space-1000: 5em; /*80px*/
+  --space-1800: 9em; /*144px*/
+
+  --space-500: 2.5em; /*40px*/
+  --space-600: 3em; /*48px*/
+  --space-800: 4em; /*64px*/
+}
+
+/* Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*reset end*/
+
+button {
+  border-radius: 28px;
+  color: #fff;
+  padding: var(--space-150) var(--space-300);
+  border: none;
+}
+.button--blue {
+  background-color: var(--clr-primary-900);
+}
+.buton-pink {
+  background-color: var(--clr-accent-600);
+}
+.button--gradient {
+  background: linear-gradient(to bottom, var(--clr-gradient-2));
+}
+
+header {
+  margin-bottom: var(--space-600);
+  padding: var(--space-300) var(--space-550);
+  background-color: #fafafa;
+}
+
+footer {
+  padding: var(--space-300) var(--space-550);
+}
+.hero {
+  margin-bottom: var(--space-800);
+  overflow: hidden;
+}
+.hero-heading {
+  margin-bottom: var(--space-300);
+}
+
+.hero__body {
+  margin-bottom: var(--space-500);
+}
+.hero__img-wrapper {
+  justify-self: center;
+  transform: translate(50px, -55px);
+}
+.courses {
+  background: linear-gradient(#fff, #f0f1ff);
+}
+.courses__section-wrapper {
+  grid-template-columns: 1em 1fr;
+  padding-bottom: var(--space-1000);
+}
+.courses__section-wrapper > * {
+  grid-column: 2/-1;
+}
+
+.courses__title-box {
+  background: linear-gradient(322deg, var(--clr-gradient-1));
+  padding: var(--space-400);
+  border-radius: 15px;
+}
+.courses__wrapper {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 28px 32px;
+}
+.courses__icon {
+  transform: translateY(-100%);
+  transform: translatX(-100%);
+}
+
+footer {
+  background-color: var(--clr-primary-900);
+}
+
+/*Typography*/
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  color: var(--clr-primary--600);
+}
+h1 {
+  font-size: var(--fs-300);
+  line-height: 120%;
+  letter-spacing: 0;
+  color: var(--clr-primary-900);
+}
+h2 {
+  color: var(--clr-primary-900);
+  font-size: var(--fs-200);
+}
+.courses__title-box {
+  color: #fff;
+}
+.courses__wrapper {
+  border-radius: 15px;
+  /*shadow check */
+}
+.courses__body {
+  font-weight: bold;
+}
+.courses_get-started {
+  color: var(--clr-accent-600);
+  text-decoration: none;
+}
+
+/* Layout */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 20px repeat(4, 1fr) 20px;
+}
+.main-grid > * {
+  grid-column: 2/-2;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--gap-500 {
+  row-gap: var(--space-500);
+}
+
+.grid-gap-400 {
+  row-gap: var(--space-400);
+}
+.grid-gap-300 {
+  row-gap: var(--space-300);
+}
+
+/*tablet */
+@media screen and (min-width: 48rem) {
+  .main-grid {
+    grid-template-columns: var(--space-550) repeat(8, 1fr) var(--space-550);
+  }
+  .grid-two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-gap-400 {
+    gap: var(--space-400);
+  }
+  .hero__content {
+    grid-column: 2/6;
+  }
+  .hero__img-wrapper {
+    grid-column: 7/-1;
+  }
+  .courses__section-wrapper {
+    padding-bottom: var(--space-1800);
+  }
+  .courses__section-wrapper > * {
+    grid-column: auto;
+  }
+  .courses__title-box {
+    max-width: 328px;
+    text-align: left;
+  }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 64rem) {
+  .main-grid {
+    grid-template-columns:
+      minmax(var(--space-1000), 1fr) repeat(10, minmax(0, 120px))
+      minmax(var(--space-1000), 1fr);
+  }
+  .courses__section-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-700);
+  }
+}
+
+/*Layout End*/
